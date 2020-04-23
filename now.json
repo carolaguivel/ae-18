@@ -1,7 +1,6 @@
 {
   "version" : 2,
   "name": "ae-18-2020",
-  "scope": "ae-18",
   "builds":[
     {
       "src":"*.html",

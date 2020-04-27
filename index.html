@@ -102,7 +102,10 @@ function $postMessage() {
         $message = $("#message").html().trim(),
         $location = $("#input-location").html().trim();
 
-    window.scrollTo(0,document.getElementById("message-view").scrollHeight);
+    // let parent = document.getElementById("message-view")
+    // window.scrollTo(0,parent.getElementsByClassName("form-posted").scrollHeight);
+    // parent.getElementsByClassName("form-posted").scrollIntoView();
+    document.getElementById("message-view").scrollIntoView({block: "end"});
     
     $message = $message.replace(/<div>/, "<br>").replace(/<div>/g, "").replace(/<\/div>/g, "<br>").replace(/<br>/g, " ").trim();
 

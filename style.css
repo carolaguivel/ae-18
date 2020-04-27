@@ -125,7 +125,7 @@ p, h1, h2, h3, h4, span, a, div {
 
 #message-view {
     margin-top: 2.5%;
-    margin-bottom: 8%;
+    padding-bottom: 8%;
 }
 
 .welcome {

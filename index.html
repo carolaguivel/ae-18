@@ -1087,7 +1087,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="warcore-window">
+                                <div class="warcore-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="warcore-window-title">${data.warcore[0].eyewear[eyewearnumber].title}</p>
                                     <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].eyewear[eyewearnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].eyewear[eyewearnumber].price}</p></div>
@@ -1107,8 +1107,6 @@ function $postMessage() {
                                     </svg>
                                 </div>`
                             )
-                            var elem = document.querySelector('.warcore-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1153,7 +1151,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="warcore-window">
+                                <div class="warcore-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="warcore-window-title">${data.warcore[0].bags[bagsnumber].title}</p>
                                     <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].bags[bagsnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].bags[bagsnumber].price}</p></div>
@@ -1173,8 +1171,6 @@ function $postMessage() {
                                     </svg>
                                 </div>`
                             )
-                            var elem = document.querySelector('.warcore-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1219,7 +1215,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="warcore-window">
+                                <div class="warcore-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="warcore-window-title">${data.warcore[0].bottoms[bottomsnumber].title}</p>
                                     <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].bottoms[bottomsnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].bottoms[bottomsnumber].price}</p></div>
@@ -1239,8 +1235,6 @@ function $postMessage() {
                                     </svg>
                                 </div>`
                             )
-                            var elem = document.querySelector('.warcore-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1299,7 +1293,7 @@ function $postMessage() {
                         $.getJSON(myurl, function(data){
                             if (data.warcore[0].outerwear[outerwearnumber].images.length == 4){
                                 $("#windows-wrapper").append(`
-                                    <div class="warcore-window">
+                                    <div class="warcore-window draggable">
                                         <div class="window-close">&#10005;</div>
                                         <p class="warcore-window-title">${data.warcore[0].outerwear[outerwearnumber].title}</p>
                                         <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].outerwear[outerwearnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].outerwear[outerwearnumber].price}</p></div>
@@ -1320,11 +1314,9 @@ function $postMessage() {
                                         </svg>
                                     </div>`
                                 )
-                                var elem = document.querySelector('.warcore-window');
-                                var draggie = new Draggabilly( elem, {});
                             } else {
                                 $("#windows-wrapper").append(`
-                                    <div class="warcore-window">
+                                    <div class="warcore-window draggable">
                                         <div class="window-close">&#10005;</div>
                                         <p class="warcore-window-title">${data.warcore[0].outerwear[outerwearnumber].title}</p>
                                         <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].outerwear[outerwearnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].outerwear[outerwearnumber].price}</p></div>
@@ -1344,8 +1336,6 @@ function $postMessage() {
                                         </svg>
                                     </div>`
                                 )
-                                var elem = document.querySelector('.warcore-window');
-                                var draggie = new Draggabilly( elem, {});
                             }
                         });
                     } else {
@@ -1385,7 +1375,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="warcore-window">
+                                <div class="warcore-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="warcore-window-title">${data.warcore[0].shirts[shirtsnumber].title}</p>
                                     <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].shirts[shirtsnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].shirts[shirtsnumber].price}</p></div>
@@ -1405,8 +1395,6 @@ function $postMessage() {
                                     </svg>
                                 </div>`
                             )
-                            var elem = document.querySelector('.warcore-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1451,7 +1439,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="warcore-window">
+                                <div class="warcore-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="warcore-window-title">${data.warcore[0].shoes[shoesnumber].title}</p>
                                     <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].shoes[shoesnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].shoes[shoesnumber].price}</p></div>
@@ -1471,8 +1459,6 @@ function $postMessage() {
                                     </svg>
                                 </div>`
                             )
-                            var elem = document.querySelector('.warcore-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1523,7 +1509,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="warcore-window">
+                                <div class="warcore-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="warcore-window-title">${data.warcore[0].sweaters[sweatersnumber].title}</p>
                                     <div class="warcore-window-details"><p class="warcore-window-brand">${data.warcore[0].sweaters[sweatersnumber].brand}</p><p class="warcore-window-price">${data.warcore[0].sweaters[sweatersnumber].price}</p></div>
@@ -1543,8 +1529,6 @@ function $postMessage() {
                                     </svg>
                                 </div>`
                             )
-                            var elem = document.querySelector('.warcore-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1575,7 +1559,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="times-window">
+                                <div class="times-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="times-window-title">${data.times[0].earth[earthnumber].title}</p>
                                     <div class="times-window-details"><p class="times-window-brand">${data.times[0].earth[earthnumber].author}</p><p class="times-window-date">${data.times[0].earth[earthnumber].date}</p></div>
@@ -1598,8 +1582,6 @@ function $postMessage() {
                                     <p class="times-caption">&nbsp;</p>
                                 </div>`
                             )
-                            var elem = document.querySelector('.times-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1630,7 +1612,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="times-window">
+                                <div class="times-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="times-window-title">${data.times[0].mars[marsnumber].title}</p>
                                     <div class="times-window-details"><p class="times-window-brand">${data.times[0].mars[marsnumber].author}</p><p class="times-window-date">${data.times[0].mars[marsnumber].date}</p></div>
@@ -1653,8 +1635,6 @@ function $postMessage() {
                                     <p class="times-caption">&nbsp;</p>
                                 </div>`
                             )
-                            var elem = document.querySelector('.times-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1687,7 +1667,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="times-window">
+                                <div class="times-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="times-window-title">${data.times[0].moon[moonnumber].title}</p>
                                     <div class="times-window-details"><p class="times-window-brand">${data.times[0].moon[moonnumber].author}</p><p class="times-window-date">${data.times[0].moon[moonnumber].date}</p></div>
@@ -1710,8 +1690,6 @@ function $postMessage() {
                                     <p class="times-caption">&nbsp;</p>
                                 </div>`
                             )
-                            var elem = document.querySelector('.times-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1744,7 +1722,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="times-window">
+                                <div class="times-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="times-window-title">${data.times[0].space[spacenumber].title}</p>
                                     <div class="times-window-details"><p class="times-window-brand">${data.times[0].space[spacenumber].author}</p><p class="times-window-date">${data.times[0].space[spacenumber].date}</p></div>
@@ -1767,8 +1745,6 @@ function $postMessage() {
                                     <p class="times-caption">&nbsp;</p>
                                 </div>`
                             )
-                            var elem = document.querySelector('.times-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -1801,7 +1777,7 @@ function $postMessage() {
                     
                         $.getJSON(myurl, function(data){
                             $("#windows-wrapper").append(`
-                                <div class="rundfunk-window">
+                                <div class="rundfunk-window draggable">
                                     <div class="window-close">&#10005;</div>
                                     <p class="rundfunk-window-title">${data.rundfunk[0].stations[rundfunknumber].title}</p>
                                     <div class="rundfunk-window-details"><p class="rundfunk-window-brand">${data.rundfunk[0].stations[rundfunknumber].author}</p><p class="rundfunk-window-price">${data.rundfunk[0].stations[rundfunknumber].date}</p></div>
@@ -1811,8 +1787,6 @@ function $postMessage() {
                                     </div>
                                 </div>`
                             )
-                            var elem = document.querySelector('.rundfunk-window');
-                            var draggie = new Draggabilly( elem, {});
                         });
                     } else {
                         $("#message-view").append(`
@@ -2802,6 +2776,18 @@ function $postMessage() {
             )
             window.scrollTo(0,document.body.scrollHeight);
         });
+
+        var draggableElems = document.querySelectorAll('.draggable');
+
+        var draggies = []
+
+        for ( var i=0, len = draggableElems.length; i < len; i++ ) {
+            var draggableElem = draggableElems[i];
+            var draggie = new Draggabilly( draggableElem, {
+            axis: 'x,y',
+            });
+            draggies.push( draggie );
+        };
 
         $('.swiper-container').flickity({
             cellAlign: 'left',
